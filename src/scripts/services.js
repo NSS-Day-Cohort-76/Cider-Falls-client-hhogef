@@ -5,13 +5,13 @@ const servicesArray = getServices();
 export const services = () => {
     let servicesHTML = "Park Services:"
 
-    servicesArray.forEach(service => {
+    servicesArray.forEach((service, i) => {
         servicesHTML += 
         `<p data-id="${service.id}"
         data-type="service"
         data-areaIn="${service.areasIn}"
                           class="services">
-                          ${service.name},
+                          ${service.name}${i != servicesArray.length - 1 ? `,` : ``}
                           </p>
                           `
     })
