@@ -1,4 +1,4 @@
-import {getAreas} from database.js
+import {getAreas} from "./database.js"
 
 let areasArray = getAreas()
 //Iterate through service objects 

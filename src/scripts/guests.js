@@ -1,9 +1,9 @@
 import { getGuests } from "./database.js"
 // list all park guests.  
 
-const guests = getGuests()
+const guestsArray = getGuests()
 
-export const Guests = () => {
+export const guests = () => {
     let html = "<ul>"
 
     for (const guest of guests) {
