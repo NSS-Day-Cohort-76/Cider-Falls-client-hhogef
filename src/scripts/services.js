@@ -8,6 +8,7 @@ export const services = () => {
     for (const service of servicesArray) {
         servicesHTML += `<li data-id="${service.id}"
                           data-type="service"
+                          data-areaIn="${service.areaIn}
                           >${service.name}
 
                           </li>`
