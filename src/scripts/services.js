@@ -3,19 +3,20 @@ import { getServices } from "./database.js"
 const servicesArray = getServices();
 
 export const services = () => {
-    let servicesHTML = "<ul>"
+    let servicesHTML = "Park Services:"
 
-    for (const service of servicesArray) {
-        servicesHTML += `<li data-id="${service.id}"
-                          data-type="service"
-                          data-areaIn="${service.areaIn}
-                          >${service.name}
-
-                          </li>`
-    }
-    
-                        
-    servicesHTML += "</ul>"
-
-    return servicesHTML
+    servicesArray.forEach(service => {
+        servicesHTML += 
+        `<p data-id="${service.id}"
+        data-type="service"
+        data-areaIn="${service.areasIn}"
+                          class="services">
+                          ${service.name},
+                          </p>
+                          `
+    })
+    return servicesHTML += ''
 }
+
+                          //     servicesHTML += servicesArray.map(service => service.name).join(", ")     
+                          //    servicesHTML += "</p>"       

@@ -1,13 +1,13 @@
 import { getGuests } from "./database.js"
 // list all park guests.  
 
-const guests = getGuests()
+const guestsArray = getGuests()
 
-export const Guests = () => {
-    let html = "<ul>"
+export const guests = () => {
+    let guestsHTML = "<ul>"
 
-    for (const guest of guests) {
-        html += `<li
+    for (const guest of guestsArray) {
+        guestsHTML += `<li
         data-type="guest"
         data-id="${guest.id}" 
         data-areaId="${guest.areaId}
@@ -15,6 +15,6 @@ export const Guests = () => {
         >${guest.name}</li>`
     }
 
-    html += "</ul>"
-    return html
+    guestsHTML += "</ul>"
+    return guestsHTML
 }
