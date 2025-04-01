@@ -8,7 +8,7 @@ const mainContainer = document.getElementById("container")
 const serviceHTML = services()
 const guestsHTML = guests()
 const areasHTML = areas()
-const renderHTML = () => {
+
 
 const renderHTML = () => {
   return `
