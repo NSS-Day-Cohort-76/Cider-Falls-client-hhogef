@@ -1,3 +1,5 @@
+import { services } from "./services.js";
+
 const database = {
     guests: [{
         id: 1,

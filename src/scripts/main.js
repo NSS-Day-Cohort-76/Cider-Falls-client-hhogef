@@ -1,7 +1,9 @@
 import{services} from "./services.js"
 import{guests} from "./guests.js"
 import{areas} from "./areas.js"
+
 const mainContainer = document.getElementById("container")
+
 
 const serviceHTML = services()
 const guestsHTML = guests()

@@ -4,10 +4,10 @@ import { getGuests } from "./database.js"
 const guestsArray = getGuests()
 
 export const guests = () => {
-    let html = "<ul>"
+    let guestsHTML = "<ul>"
 
-    for (const guest of guests) {
-        html += `<li
+    for (const guest of guestsArray) {
+        guestsHTML += `<li
         data-type="guest"
         data-id="${guest.id}" 
         data-areaId="${guest.areaId}
@@ -15,6 +15,6 @@ export const guests = () => {
         >${guest.name}</li>`
     }
 
-    html += "</ul>"
-    return html
+    guestsHTML += "</ul>"
+    return guestsHTML
 }
