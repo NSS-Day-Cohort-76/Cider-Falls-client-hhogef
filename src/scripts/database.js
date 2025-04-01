@@ -1,5 +1,3 @@
-
-
 const database = {
     guests: [{
         id: 1,

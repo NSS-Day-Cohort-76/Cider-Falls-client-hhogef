@@ -1,4 +1,5 @@
 import {getAreas, getServices} from "./database.js"
+import { services } from "./services.js"
 
 const serve = getServices()
 
@@ -10,8 +11,8 @@ export const areas = () => {
     for (const area of areasArray){
       areasHTML += `<h1 data-type="areas" data-id="${area.id}">${area.titleName}</h1>`
       serve.forEach(serve => { 
-        if (serve.areasIn[0] === area.id){
-        return `<p>${serve.name}</p>`
+        if (serve.areasIn.includes(area.id)){
+        areasHTML += `<p>${serve.name}</p>`
 
       }
     }) 
