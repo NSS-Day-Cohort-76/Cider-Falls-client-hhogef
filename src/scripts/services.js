@@ -5,18 +5,20 @@ const servicesArray = getServices();
 export const services = () => {
     let servicesHTML = "Park Services:"
 
-    servicesArray.forEach(service => {
+    servicesArray.forEach((service, index) => {
         servicesHTML += 
         `<p data-id="${service.id}"
         data-type="service"
-        data-areaIn="${service.areasIn}"
-                          class="services">
-                          ${service.name},
-                          </p>
-                          `
+        data-areaIn="${service.areasIn}" 
+        class="services">
+        ${service.name}${index !== servicesArray.length - 1 ? ',' : ''}
+        </p>`;
     })
-    return servicesHTML += ''
+    
+    return servicesHTML;
 }
 
+
                           //     servicesHTML += servicesArray.map(service => service.name).join(", ")     
-                          //    servicesHTML += "</p>"       
+                          //    servicesHTML += "</p>"    
+
