@@ -80,3 +80,8 @@ footer {
     color: beige;
   
 }
+
+.areaName {
+    display: flex;
+    flex-direction: row;
+}
