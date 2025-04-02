@@ -9,6 +9,7 @@ export const services = () => {
         servicesHTML += 
         `<p data-id="${service.id}"
         data-type="service"
+        data-name="${service.name}"
         data-areaIn="${service.areasIn}"
                           class="services">
                           ${service.name}${i != servicesArray.length - 1 ? `,` : ``}
