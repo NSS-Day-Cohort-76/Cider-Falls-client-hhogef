@@ -8,15 +8,21 @@ const mainContainer = document.getElementById("container")
 const serviceHTML = services()
 const guestsHTML = guests()
 const areasHTML = areas()
+
+
 const renderHTML = () => {
   return `
-    <h1 id="services_header">Cider Falls</h1>
-    <div id="services-list">${serviceHTML}</div>
+    <div id="services-list">
+    <h1 id="services_header">Park Services</h1>
+    <p>${serviceHTML}</p>
+    </div>
+    
     <div id="areas_related_amenities">
     <p>${areasHTML}</p> 
     </div>
+    
     <div id="guest">
-    <h1>Current Park Guest</h1>
+    <h1>Current Park Guests</h1>
     <p>${guestsHTML}</p>
     </div>
   `
