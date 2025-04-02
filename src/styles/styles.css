@@ -40,12 +40,12 @@
 }
 
 #areas_related_amenities {
+  display: flex;
     border: solid 2px #690d0d;
     padding: 20px;
     margin: 20px;
-    justify-self:left;
-    align-self: flex-start;
-    flex-direction: row;
+    justify-self: center;
+    flex-direction: column;
     width: 50%;
     
 }

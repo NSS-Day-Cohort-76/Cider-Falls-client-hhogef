@@ -1,6 +1,7 @@
 import{services} from "./services.js"
 import{guests} from "./guests.js"
 import{areas} from "./areas.js"
+import { guestCountClick } from "./onClickEvents.js"
 
 const mainContainer = document.getElementById("container")
 
@@ -28,3 +29,5 @@ const renderHTML = () => {
   `
 }
  mainContainer.innerHTML = renderHTML()
+
+ guestCountClick()
