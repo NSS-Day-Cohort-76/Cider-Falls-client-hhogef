@@ -9,7 +9,7 @@ export const areas = () => {
  let areasHTML = ""
 
     for (const area of areasArray){
-      areasHTML += `<h1 data-type="areas" data-id="${area.id}">${area.titleName}</h1>`
+      areasHTML += `<h1 data-type="areas" data-name="${area.titleName}" data-id="${area.id}">${area.titleName}</h1>`
       serve.forEach(serve => { 
         if (serve.areasIn.includes(area.id)){
         areasHTML += `<p>${serve.name}</p>`
