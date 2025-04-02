@@ -15,10 +15,5 @@ export const services = () => {
                           </p>
                           `
     })
-    
-    return servicesHTML;
+    return servicesHTML += ''
 }
-
-
-
-
