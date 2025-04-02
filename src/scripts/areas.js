@@ -6,16 +6,19 @@ const serve = getServices()
 let areasArray = getAreas()
 //Iterate through service objects 
 export const areas = () => {
- let areasHTML = ""
+ let areasHTML = `<div class="areas-container">`
 
     for (const area of areasArray){
-      areasHTML += `<h1 data-type="areas" data-id="${area.id}" class="areaName">${area.titleName}</h1>`
+      areasHTML+= `<div class="area-card" data-type="areas" data-id="$area.id}">`
+      areasHTML += `<h1>${area.titleName}</h1>`
       serve.forEach(serve => { 
         if (serve.areasIn.includes(area.id)){
-        areasHTML += `<p class="serviceArea">${serve.name}</p>`
+        areasHTML += `<p id="serviceArea">${serve.name}</p>`
 
       }
     }) 
+    areasHTML +=`</div>`
   }
+  areasHTML += `</div>`  
     return areasHTML
 }
