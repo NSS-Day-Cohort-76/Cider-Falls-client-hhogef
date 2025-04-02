@@ -14,12 +14,11 @@ const areasHTML = areas()
 const renderHTML = () => {
   return `
     <div id="services-list">
-    <h1 id="services_header">Park Services</h1>
     <p>${serviceHTML}</p>
     </div>
     
     <div id="areas_related_amenities">
-    <p>${areasHTML}</p> 
+    <p class"areaSelector">${areasHTML}</p> 
     </div>
     
     <div id="guest">

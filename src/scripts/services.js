@@ -3,7 +3,7 @@ import { getServices } from "./database.js"
 const servicesArray = getServices();
 
 export const services = () => {
-    let servicesHTML = ''
+    let servicesHTML = "<strong>Park Services:</strong>"
 
     servicesArray.forEach((service, i) => {
         servicesHTML += 
