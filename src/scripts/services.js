@@ -17,6 +17,3 @@ export const services = () => {
     })
     return servicesHTML += ''
 }
-
-                          //     servicesHTML += servicesArray.map(service => service.name).join(", ")     
-                          //    servicesHTML += "</p>"       
